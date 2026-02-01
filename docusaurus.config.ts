@@ -126,13 +126,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['bash', 'json', 'typescript'],
     },
-    algolia: {
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'plugix',
-      contextualSearch: true,
-      searchPagePath: 'search',
-    },
   } satisfies Preset.ThemeConfig,
 };
 

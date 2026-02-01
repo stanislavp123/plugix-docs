@@ -1,41 +1,61 @@
-# Website
+# Plugix Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Documentation site for Plugix - AI Integration for Business Systems.
 
-## Installation
+**Live site:** https://docs.plugix.ai
 
-```bash
-yarn
-```
-
-## Local Development
+## Development
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Opens at http://localhost:3000
 
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Output in `build/` directory.
 
 ## Deployment
 
-Using SSH:
+Automatic deployment via GitHub Actions on push to `main`.
 
-```bash
-USE_SSH=true yarn deploy
+### Manual Deploy
+
+1. Set up Vercel secrets in GitHub repository:
+   - `VERCEL_TOKEN`
+   - `VERCEL_ORG_ID`
+   - `VERCEL_PROJECT_ID`
+
+2. Push to main:
+   ```bash
+   git push origin main
+   ```
+
+### Custom Domain
+
+Configure `docs.plugix.ai` in Vercel:
+
+1. Go to Vercel project settings
+2. Add domain `docs.plugix.ai`
+3. Update DNS: CNAME `docs` → `cname.vercel-dns.com`
+
+## Structure
+
+```
+docs/
+├── intro.md              # Homepage
+├── getting-started/      # Quick start guides
+├── api-reference/        # API documentation
+├── mcp-servers/          # MCP server docs
+└── guides/               # Integration guides
 ```
 
-Not using SSH:
+## License
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Copyright © 2024 Plugix
