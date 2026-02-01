@@ -25,25 +25,16 @@ Output in `build/` directory.
 
 Automatic deployment via GitHub Actions on push to `main`.
 
-### Manual Deploy
+### Setup GitHub Pages
 
-1. Set up Vercel secrets in GitHub repository:
-   - `VERCEL_TOKEN`
-   - `VERCEL_ORG_ID`
-   - `VERCEL_PROJECT_ID`
-
-2. Push to main:
-   ```bash
-   git push origin main
-   ```
+1. Go to repository Settings → Pages
+2. Source: GitHub Actions
+3. Push to main triggers deploy
 
 ### Custom Domain
 
-Configure `docs.plugix.ai` in Vercel:
-
-1. Go to Vercel project settings
-2. Add domain `docs.plugix.ai`
-3. Update DNS: CNAME `docs` → `cname.vercel-dns.com`
+1. Add `docs.plugix.ai` in Settings → Pages → Custom domain
+2. DNS: CNAME `docs` → `stanislavp123.github.io`
 
 ## Structure
 
