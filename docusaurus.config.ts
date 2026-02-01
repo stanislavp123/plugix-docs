@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://docs.plugix.ai',
-  baseUrl: '/',
+  url: 'https://stanislavp123.github.io',
+  baseUrl: '/plugix-docs/',
 
   organizationName: 'stanislavp123',
   projectName: 'plugix-docs',
