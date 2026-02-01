@@ -80,15 +80,15 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/getting-started',
+              to: '/getting-started/quickstart',
             },
             {
               label: 'API Reference',
-              to: '/api-reference',
+              to: '/api-reference/authentication',
             },
             {
               label: 'MCP Servers',
-              to: '/mcp-servers',
+              to: '/mcp-servers/overview',
             },
           ],
         },
